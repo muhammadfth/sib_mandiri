@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan Tiket Travel</title>
+    <link rel="stylesheet" href="./css/form.css" />
+    <style>
+      /* contoh css internal */
+      /* contoh penulisan selector tag */
+      /* label{
+         padding: 20%;  */
+
+      /* salah satu property yang memberikan jarak antara element dengan tag */
+      /* margin: auto; */
+      /* salah satu property yang digunakan untuk memberi jarak antara content satu 
+         dengan content yang lain */
+      /*         
+      }
+      input {
+         width: 20%;
+         height: auto;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!--contoh penulisan css inline-->
+      <h1 style="color: aqua; text-align: center">
+        Form Pemesanan Tiket Travel
+      </h1>
+      <form action="" method="post" class="form-contoh">
+        <!--self tag 
+      <br/>
+      semantic 
+      <header>
+         <table>
+      -->
+
+        <!-- Nama Lengkap -->
+        <label for="fullname">Nama Lengkap:</label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          required
+          placeholder="Masukkan Nama Lengkap"
+        />
+        <br /><br />
+
+        <!-- email -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Masukkan Email"
+        />
+        <br /><br />
+
+        <!-- Nomor Telepon -->
+        <label for="phone">Nomor Telepon:</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          required
+          placeholder="Masukkan Nomor Telepon"
+        />
+        <br /><br />
+
+        <!-- Rute Perjalanan -->
+        <label for="route">Rute Perjalanan:</label>
+        <select name="route" id="route" required>
+          <option value="">Pilih Rute</option>
+          <option value="Jakarta - Bandung">Jakarta - Bandung</option>
+          <option value="Bandung - Surabaya">Bandung - Surabaya</option>
+          <option value="Jakarta - Yogyakarta">Jakarta - Yogyakarta</option>
+        </select>
+        <br /><br />
+
+        <!-- Tanggal Keberangkatan -->
+        <label for="departure-date">Tanggal Keberangkatan</label>
+        <input type="date" name="departure-date" id="departure-date" required />
+        <br /><br />
+
+        <!-- Waktu Keberangkatan -->
+        <label for="departure-time">Waktu Keberangkatan</label>
+        <select name="departure-time" id="departure-time" required>
+          <option value="08:00">08:00</option>
+          <option value="12:00">12:00</option>
+          <option value="18:00">18:00</option>
+        </select>
+        <br /><br />
+
+        <!-- Jumlah Penumpang -->
+        <label for="passenger">Jumlah Penumpang</label>
+        <input
+          type="number"
+          name="passenger"
+          id="passenger"
+          min="1"
+          max="6"
+          required
+          value="1"
+        />
+        <br /><br />
+
+        <!-- Metode Pembayaran -->
+        <label for="payment">Metode Pembayaran</label>
+        <select name="payment" id="payment" required>
+          <option value="">Pilih Metode Pembayaran</option>
+          <option value="Trasnfer-Bank">Transfer Bank</option>
+          <option value="Kartu-Kredit">Kartu Kredit</option>
+          <option value="e-wallet">E-Wallet</option>
+        </select>
+        <br /><br />
+
+        <!-- Persetujuan Syarat dan Ketentuan -->
+        <label>
+          <input type="checkbox" name="terms" required />Saya Setuju Dengan
+          Syarat Dan Ketentuan
+        </label>
+        <br /><br />
+
+        <!-- Tombol Submit -->
+        <button type="submit">Pesan Tiket</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
